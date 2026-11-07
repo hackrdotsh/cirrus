@@ -177,6 +177,16 @@ pds migrate --clean      # Reset and re-import
 pds activate             # Go live again
 ```
 
+### `pds deploy`
+
+Deploys the PDS worker to Cloudflare.
+
+```bash
+pds deploy               # Deploy to production
+```
+
+Use this command to deploy your PDS to Cloudflare after pulling new changes (e.g., after running `pnpm update --latest`).
+
 ### `pds migrate-token`
 
 Generates a migration token for migrating away from this PDS to another one.
